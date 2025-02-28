@@ -9,5 +9,12 @@
 let oddOrEven = confirm('Pari o dispari. vuoi pari?')
 
 // chiedi un numero da 1 a 5
+let numUser = Number(prompt('inserisci un numero da 1 a 5'))
 
-let numUser = prompt('inserisci un numero da 1 a 5')
+// controlla che sia davvero compreso stra 1 e 5
+if (numUser > 0 && numUser <= 5) {
+    // resto dell'esercizio
+}
+else {
+    console.log('OOOOHHHHH')
+}
