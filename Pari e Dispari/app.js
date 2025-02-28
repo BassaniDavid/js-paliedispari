@@ -27,7 +27,16 @@ console.log(pcRanNum)
 if (numUser > 0 && numUser <= 5) {
     // sommo i 2 numeri
     let tot = numUser + pcRanNum
-    console.log(tot)
+
+    // funzione per stabilire se è pari o dispari
+
+    function OddEven (sum1) {
+        
+        return sum1 % 2 == 0
+    }
+
+    isOddOrEven = OddEven(tot)
+    console.log(isOddOrEven)
 }
 else {
     console.log('OOOOHHHHH')
