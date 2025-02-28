@@ -5,3 +5,5 @@
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // Dichiariamo chi ha vinto.
 
+// chiedo all'utente pari o dispari
+let oddOrEven = confirm('Pari o dispari. vuoi pari?')
