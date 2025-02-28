@@ -7,3 +7,7 @@
 
 // chiedo all'utente pari o dispari
 let oddOrEven = confirm('Pari o dispari. vuoi pari?')
+
+// chiedi un numero da 1 a 5
+
+let numUser = prompt('inserisci un numero da 1 a 5')
