@@ -9,7 +9,6 @@ let word = prompt("inserisci una parola");
 console.log(word)
 
 // crea una funzione
-let isWordPal = false
 
 function Wordpal(userWord) {
 
@@ -20,11 +19,12 @@ function Wordpal(userWord) {
     let wordInv = wordDiv.join('');
 
     if(userWord === wordInv){
-        isWordPal = true
+        console.log('la parola è palindroma')
+    } else {
+        console.log('la parola NON è palindroma')
     }
     
 }
 
 Wordpal(word)
 
-console.log(isWordPal)
