@@ -2,8 +2,8 @@
 // Chiedere all’utente di inserire una parola
 // Creare una funzione per capire se la parola inserita è palindroma
 
-// Chiedere all’utente di inserire una parola
-let word = prompt("inserisci una parola");
+// Chiedere all’utente di inserire una parola e rendila minuscola
+let word = prompt("inserisci una parola").toLowerCase();
 
 // controlla che la parola sia inserita correttamente
 console.log(word)
@@ -12,13 +12,11 @@ console.log(word)
 
 function Wordpal(userWord) {
 
-    let wordDiv = userWord.toLowerCase().split('');
+    // separa la parola, inverti e unisci
+    let wordDiv = userWord.split('').reverse().join('');
 
-    wordDiv = wordDiv.reverse();
-
-    let wordInv = wordDiv.join('');
-
-    if(userWord === wordInv){
+    // confronta la parola invertita con l'originale per capire se è polindroma e stampa il risultato
+    if(userWord === wordDiv){
         console.log('la parola è palindroma')
     } else {
         console.log('la parola NON è palindroma')
@@ -26,5 +24,6 @@ function Wordpal(userWord) {
     
 }
 
+// richiama la funzione per attivarla
 Wordpal(word)
 
