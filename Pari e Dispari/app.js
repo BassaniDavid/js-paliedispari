@@ -37,6 +37,14 @@ if (numUser > 0 && numUser <= 5) {
 
     isOddOrEven = OddEven(tot)
     console.log(isOddOrEven)
+    
+    // se il valore è uguale a quello scelto dall utente ha ViewTransition, alterimenti perso
+    if(oddOrEven === isOddOrEven){
+        console.log('complimenti hai vinto!')
+    }
+    else{
+        console.log('Mi dispiace hai perso')
+    }
 }
 else {
     console.log('OOOOHHHHH')
