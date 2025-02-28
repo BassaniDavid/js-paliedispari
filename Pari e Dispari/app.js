@@ -12,21 +12,22 @@ let oddOrEven = confirm('Pari o dispari. vuoi pari?')
 let numUser = Number(prompt('inserisci un numero da 1 a 5'))
 
 // generatore casuale di numeri
-
 function randomGenerator (num1) {
    num1 = (Math.floor( Math.random() * 5 )+ 1 )
     return num1
 }
 
+// attiva la funzione generatore casuale di numeri e assegna il risultato al pc
 let pcRanNum = randomGenerator()
 
 // stampa il numero assegnato al pc
-
 console.log(pcRanNum)
 
 // controlla che sia davvero compreso stra 1 e 5
 if (numUser > 0 && numUser <= 5) {
-    // resto dell'esercizio
+    // sommo i 2 numeri
+    let tot = numUser + pcRanNum
+    console.log(tot)
 }
 else {
     console.log('OOOOHHHHH')
