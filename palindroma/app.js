@@ -9,3 +9,5 @@ let word = prompt("inserisci una parola");
 console.log(word)
 
 // crea una funzione
+
+function isWordpal () {}
