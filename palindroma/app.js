@@ -9,8 +9,9 @@ let word = prompt("inserisci una parola");
 console.log(word)
 
 // crea una funzione
+let isWordPal = false
 
-function isWordpal(userWord) {
+function Wordpal(userWord) {
 
     let wordDiv = userWord.toLowerCase().split('');
 
@@ -18,8 +19,12 @@ function isWordpal(userWord) {
 
     let wordInv = wordDiv.join('');
 
-    return wordInv;
+    if(userWord === wordInv){
+        isWordPal = true
+    }
     
 }
 
-console.log(isWordpal(word))
+Wordpal(word)
+
+console.log(isWordPal)
