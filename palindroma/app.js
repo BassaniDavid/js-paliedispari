@@ -10,4 +10,16 @@ console.log(word)
 
 // crea una funzione
 
-function isWordpal () {}
+function isWordpal(userWord) {
+
+    let wordDiv = userWord.toLowerCase().split('');
+
+    wordDiv = wordDiv.reverse();
+
+    let wordInv = wordDiv.join('');
+
+    return wordInv;
+    
+}
+
+console.log(isWordpal(word))
