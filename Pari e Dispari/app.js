@@ -23,7 +23,7 @@ let pcRanNum = randomGenerator()
 // stampa il numero assegnato al pc
 console.log(pcRanNum)
 
-// controlla che sia davvero compreso stra 1 e 5
+// controlla che sia davvero compreso tra 1 e 5
 if (numUser > 0 && numUser <= 5) {
     // sommo i 2 numeri
     let tot = numUser + pcRanNum
@@ -35,10 +35,10 @@ if (numUser > 0 && numUser <= 5) {
         return sum1 % 2 == 0
     }
 
-    isOddOrEven = OddEven(tot)
+    let isOddOrEven = OddEven(tot)
     console.log(isOddOrEven)
     
-    // se il valore è uguale a quello scelto dall utente ha ViewTransition, alterimenti perso
+    // se il valore è uguale a quello scelto dall utente ha Vinto, alterimenti perso
     if(oddOrEven === isOddOrEven){
         console.log('complimenti hai vinto!')
     }
